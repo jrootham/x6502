@@ -8,10 +8,18 @@
 .(
 jmp prog
 
-+putc = $FF00
-+getc = $FF01
++putc   = $FF00
++getc   = $FF01
 +iomode = $FF02
-+paint = $FEE8
++paint  = $FEE8
+
++PUTC   = putc
++GETC   = getc
++IOMODE = iomode
++PAINT  = paint
+
++VTERM  = $01
++HALTW  = $02
 
 +blck0_addrl = $FF03
 +blck0_addrh = $FF04
